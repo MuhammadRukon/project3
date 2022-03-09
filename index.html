@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+   <main>
+    <header id="header">
+      <div class="overlay overlay-lg">
+        <img src="./images/shapes/square.png" class="shape square" alt="" />
+        <img src="./images/shapes/circle.png" class="shape circle" alt="" />
+        <img
+          src="./images/shapes/half-circle.png"
+          class="shape half-circle1"
+          alt=""
+        />
+        <img
+          src="./images/shapes/half-circle.png"
+          class="shape half-circle2"
+          alt=""
+        />
+        <img src="./images/shapes/x.png" class="shape xshape" alt="" />
+        <img src="./images/shapes/wave.png" class="shape wave wave1" alt="" />
+        <img src="./images/shapes/wave.png" class="shape wave wave2" alt="" />
+        <img src="./images/shapes/triangle.png" class="shape triangle" alt="" />
+        <img src="./images/shapes/letters.png" class="letters" alt="" />
+        <img src="./images/shapes/points1.png" class="points points1" alt="" />
+      </div>
+
+      <nav>
+        <div class="container">
+          <div class="logo logo-main">
+            <img src="./images/logo.png" alt="" />
+          </div>
+
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#hireme" class="active">Hire me</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="container grid-2">
+          <div class="column-1">
+            <h1 class="header-title">John Dorsey</h1>
+            <p class="text">
+              Hello, I'm Miley Brewer, web design and developer. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Totam magni sit
+              hic!
+            </p>
+            <a href="#" class="btn">Download CV</a>
+          </div>
+
+          <div class="column-2 image">
+            <img
+              src="./images/shapes/points2.png"
+              class="points points2"
+              alt=""
+            />
+            <img src="./images/person.png" class="img-element z-index" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="What I do">Services</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, incidunt!
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card-wrap">
+            <img
+              src="./images/shapes/points3.png"
+              class="points points1 point-sq"
+              alt=""
+            />
+            <div class="card" data-card="UI/UX">
+              <div class="card-content">
+                <img src="./images/design-icon.png" class="icon" alt="icon" />
+                <h3 class="title-sm">Web design</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, incidunt!
+                </p>
+                <a href="" class="btn small">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="Code">
+              <div class="card-content">
+                <img src="./images/code-icon.png" class="icon" alt="icon" />
+                <h3 class="title-sm">Web Development</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, incidunt!
+                </p>
+                <a href="" class="btn small">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <img
+              src="./images/shapes/points3.png"
+              class="points points2 point-sq"
+              alt=""
+            />
+            <div class="card" data-card="App">
+              <div class="card-content">
+                <img src="./images/app-icon.png" class="icon" alt="icon" />
+                <h3 class="title-sm">App Development</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, incidunt!
+                </p>
+                <a href="" class="btn small">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="background-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="My works">Portfolio</h3>
+        </div>
+        <div class="section-body">
+          <div class="filter">
+            <button class="filter-btn active" data-filter="*">all</button>
+            <button class="filter-btn" data-filter=".ui">ui/ux</button>
+            <button class="filter-btn" data-filter=".webDev">web dev</button>
+            <button class="filter-btn" data-filter=".appDev">mobile app</button>
+            <button class="filter-btn" data-filter=".logo">
+              graphics design
+            </button>
+          </div>
+          <div class="grid">
+            <div class="grid-item logo">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port1.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item webDev">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port2.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui webDev">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port3.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port4.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item logo">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port5.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item appDev">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port6.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item logo">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port7.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item appDev ui">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port8.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui webDev">
+              <div class="gallery-image">
+                <img src="./images/portfolio/port9.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>logo Design</h3>
+                    <h5>View demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-folio">
+            <a href="#" class="btn">More folio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Who am i">About me</h3>
+        </div>
+        <div class="section-body grid-2">
+          <div class="column-1">
+            <h3 class="title-sm">Hello, I'm</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              velit veniam dolorem nesciunt at temporibus.
+            </p>
+            <div class="skills">
+              <div class="skill html">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill css">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="70%"></div>
+                </div>
+              </div>
+
+              <div class="skill js">
+                <div class="skill-title">JS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">Read more</a>
+          </div>
+          <div class="column-2 image">
+            <img src="./images/shapes/points4.png" class="points" alt="" />
+            <img src="./images/about.png" class="z-index" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="records">
+      <div class="container">
+        <div class="wrap">
+          <div class="record-circle">
+            <h2 class="number" data-num="100">0</h2>
+            <h4 class="sub-title">happy clients</h4>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="record-circle active">
+            <h2 class="number" data-num="200">0</h2>
+            <h4 class="sub-title">happy clients</h4>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="record-circle">
+            <h2 class="number" data-num="400">0</h2>
+            <h4 class="sub-title">happy clients</h4>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="record-circle">
+            <h2 class="number" data-num="300">0</h2>
+            <h4 class="sub-title">happy clients</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog section">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="last news">My blog</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            ullam?
+          </p>
+        </div>
+        <div class="blog-wrapper">
+          <div class="blog-wrap">
+            <img
+              src="./images/shapes/points3.png"
+              alt=""
+              class="points points-sq"
+            />
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./images/blog1.png" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">March, 19 2020</h5>
+                  <h5 class="blog-user">
+                    <i class="fa fa-user" aria-hidden="true"></i>Admin
+                  </h5>
+                </div>
+                <h3 class="title-sm">this is a short title</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, at? Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Fugit, at?
+                </p>
+                <a href="#" class="btn small">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-wrap">
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./images/blog2.png" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">March, 19 2020</h5>
+                  <h5 class="blog-user">
+                    <i class="fa fa-user" aria-hidden="true"></i>Admin
+                  </h5>
+                </div>
+                <h3 class="title-sm">this is a short title</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, at? Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Fugit, at?
+                </p>
+                <a href="#" class="btn small">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-wrap">
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./images/blog3.png" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">March, 19 2020</h5>
+                  <h5 class="blog-user">
+                    <i class="fa fa-user" aria-hidden="true"></i>Admin
+                  </h5>
+                </div>
+                <h3 class="title-sm">this is a short title</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, at? Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Fugit, at?
+                </p>
+                <a href="#" class="btn small">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="What People Say">Testimonials</h3>
+        </div>
+
+        <div class="testi-content grid-2">
+          <div class="column-1 reviews">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium adipisci veniam debitis quas, sapiente
+                    repellendus mollitia. Laboriosam labore voluptate quos?
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Matias Butt</h3>
+                    <h5 class="review-job">Photographer, Paris</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fugiat voluptate consequatur aut tenetur fugit error
+                    molestiae quaerat ex odio rem?
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Romeo Herbert</h3>
+                    <h5 class="review-job">CEO, Munich</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatum enim nemo quod amet dolorum aliquam,
+                    sapiente omnis eaque consectetur.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Jack Costa</h3>
+                    <h5 class="review-job">Director of THR, London</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Perspiciatis ab incidunt, dicta quam inventore ipsum
+                    dolor. Consectetur nam incidunt error!
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Reiss Mccartney</h3>
+                    <h5 class="review-job">Engineer, San Francisco</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-nav swiper-button-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
+              </div>
+              <div class="review-nav swiper-button-next">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-2 image">
+            <img src="./images/testi.png" alt="" class="img-element" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <h3 class="title">Get in touch</h3>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, unde dolorum. Placeat id ipsum exercitationem optio dolorum illum quisquam nostrum?</p>
+            <div class="information-wrap">
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <p class="info-text">tali office road, rayer bazar.</p>
+              </div>
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fa fa-paper-plane"></i>
+                </div>
+                <p class="info-text">muhammad.rukon242@gmail.com</p>
+              </div>
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <p class="info-text">tali office road, rayer bazar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3 class="title">Contact me</h3>
+            <div class="row">
+              <input type="text" class="contact-input" placeholder="First Name">
+              <input type="text" class="contact-input" placeholder="Last Name">
+            </div>
+            <div class="row">
+              <input type="text" class="contact-input" placeholder="Phone">
+              <input type="email" class="contact-input" placeholder="Email">
+            </div>
+            <div class="row">
+              <textarea name="message" class="contact-input textarea" placeholder="Message"></textarea>
+            </div>
+            <a href="#" class="btn">send</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hire-me" class="hire-me section">
+      <div class="container">
+           <h3 class="title" data-title="hire me">Let's talk about a project</h3>
+           <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus modi voluptas repellendus veniam tempore id. Sed hic quas ipsa libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus modi voluptas repellendus veniam tempore id. Sed hic quas ipsa libero.</p>
+         <a href="" class="btn">hire me</a>
+      </div>
+    </section>
+   </main>
+
+   <footer class="footer">
+     <div class="container">
+       <div class="grid-4">
+         <div class="grid-4-col footer-about">
+           <h3 class="title-sm">About</h3>
+           <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, modi!</p>
+         </div>
+         <div class="grid-4-col footer-links">
+          <h3 class="title-sm">links</h3>
+          <ul>
+            <li><a href="#">services</a></li>
+          </ul>
+           <ul>
+             <li>
+               <a href="#">portfolio</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">about</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">Testimonials</a>
+            </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">contact</a>
+              </li>
+           </ul>
+         </div>
+         <div class="grid-4-col footer-links">
+           <h3 class="title-sm">Services</h3>
+           <ul>
+             <li>
+               <a href="#">web design</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">web development</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">app design</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">marketing</a>
+              </li>
+           </ul>
+           <ul>
+             <li>
+               <a href="#">UI design</a>
+              </li>
+           </ul>
+         </div>
+         <div class="grid-4-col footer-newsLetter">
+           <h3 class="title-sm">Subscribe</h3>
+           <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, id?</p>
+           <div class="footer-input-wrap">
+             <input type="email" class="footer-input" placeholder="Email">
+              <a href="#" class="input-arrow">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+             </input>
+            </div>
+         </div>
+       </div>
+       <div class="bottom-footer">
+         <div class="copyright">
+           <p class="text">Copyright&copy;2022 all rights reserved | Made by <span>Muhammad</span></p>
+         </div>
+         <div class="followme-wrap">
+           <div class="followme">
+             <h3>follow me</h3>
+             <span class="footer-line"></span>
+             <div class="social-media">
+               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+             </div>
+           </div>
+           <div class="back-btn-wrap">
+             <a href="#" class="back-btn">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://use.fontawesome.com/8e89482eab.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
