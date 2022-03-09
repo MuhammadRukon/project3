@@ -254,11 +254,11 @@ nav .container {
 }
 
 .hamburger-menu {
+  display: none;
   width: 2.7rem;
   height: 3rem;
   z-index: 100;
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
@@ -1681,6 +1681,10 @@ footer {
   header .column-1 {
     max-width: 550px;
     margin: 0 auto;
+  }
+
+  .hamburger-menu {
+    display: flex;
   }
 
   .links {
